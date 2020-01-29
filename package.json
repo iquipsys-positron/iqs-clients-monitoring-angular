@@ -2,7 +2,7 @@
     "name": "iqs-clients-monitoring-angular",
     "version": "1.0.0",
     "author": "iQuipsys Inc. <www.iquipsys.com>",
-    "description": "Positron client microapplication for iQuipsys Positron in Angular",
+    "description": "Monitoring client microapplication for iQuipsys Positron in Angular",
     "contributors": [
         {
             "name": "Sergey Seroukhov",
