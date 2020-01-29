@@ -1,0 +1,21 @@
+<md-dialog class="pip-dialog iqs-operational-event-add-dialog layout-column bp0 pip-scroll" md-theme="{{ $ctrl.theme }}">
+
+    <iqs-operational-event-add-panel iqs-selected-item="$ctrl.setSelectedItem(item)" iqs-event-templates="$ctrl.operationalEventsTemplatesCollection">
+    </iqs-operational-event-add-panel>
+
+
+    <div class="pip-footer p0">
+        <md-list class="pip-ref-list flex tp0">
+            <md-list-item class="pip-ref-list-item pointer" ng-click="$ctrl.onAddHandle()" md-ink-ripple>
+                <div class="pip-content">
+                    {{ ::'EVENT_MANUAL_IMPUT' | translate }}
+                </div>
+            </md-list-item>
+            <md-list-item class="pip-ref-list-item pointer" ng-click="$ctrl.onAddTemplate()" md-ink-ripple>
+                <div class="pip-content">
+                    {{ ::'EVENT_TEMPLATES_EDIT' | translate }}
+                </div>
+            </md-list-item>
+        </md-list>
+    </div>
+</md-dialog>

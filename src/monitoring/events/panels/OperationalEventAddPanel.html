@@ -1,0 +1,12 @@
+<div class="pip-body pip-scroll-y p0 flex">
+    <md-list class="pip-ref-list tp8" ng-if="$ctrl.collection.length > 0">
+        <md-list-item class="pip-ref-list-item pointer" ng-click="$ctrl.selectItem(eventTpl)" md-ink-ripple ng-repeat="eventTpl in $ctrl.collection track by $index">
+            <div class="pip-content">
+                {{ eventTpl.description }}
+            </div>
+        </md-list-item>
+    </md-list>
+    <div class="iqs-empty-template" ng-if="$ctrl.collection.length == 0">
+        {{ ::'OPERATIONAL_EVENT_TEMPLATE_EMPTY' | translate }}
+    </div>
+</div>

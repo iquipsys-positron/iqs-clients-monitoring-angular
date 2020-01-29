@@ -1,0 +1,52 @@
+@import "panels/ObjectsPanel.scss";
+@import "panels/ObjectsInformationPanel.scss";
+
+.iqs-monitoring-objects-page{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+
+.iqs-inform-panel {
+    .iqs-icon {
+        margin-left: 24px;
+        margin-right: 20px;
+        margin-top: 8px;
+        margin-bottom: 8px; 
+    }
+    .pip-title {
+        line-height: 40px;
+    }
+
+}
+
+// .pip-ref-list {
+//     .pip-ref-list-item.iqs-inform-panel.iqs-big-item  {
+//         .pip-pic {
+//             cursor: inherit;
+//         }
+//     }
+// }
+.iqs-monitoring-objects-page {
+    .list-bottom-bufer {
+        display: none;
+    }
+}
+
+.iqs-retrospective-objects-page {
+    .list-bottom-bufer {
+        display: block;
+        height: 64px;
+        width: 100%;
+    }
+}
+.pip-sm, .pip-xl { 
+    .iqs-retrospective-objects-page {
+        .list-bottom-bufer {
+            display: block;
+            height: 48px;
+            width: 100%;
+        }
+    }
+}

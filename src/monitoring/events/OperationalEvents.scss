@@ -1,0 +1,91 @@
+@import './panels/OperationalEventsPanel';
+@import './panels/OperationalEventAddPanel';
+@import './panels/OperationalEventDetailsPanel';
+@import './panels/OperationalEventNewPanel';
+@import './panels/OperationalEventEmptyPanel';
+@import './dialogs/OperationalEventAddDialog';
+.pip-sm {
+    .pip-main-body {
+        .iqs-operational-event.pip-main-menu>.pip-menu {
+            width: 100% !important;
+        }
+    }
+}
+
+.iqs-operational-event {
+    .iqs-menu-empty {
+        margin: 64px 0px 0px 0px !important;
+    }
+}
+
+.iqs-operational-event-list {
+    .iqs-list-item {
+        width: 100%;
+    }
+    .iqs-before:before {
+        min-height: 0 !important;
+    }
+    .iqs-before {
+        .md-button {
+            padding-right: 8px;
+        }
+    }
+    .iqs-list-item-expanded {
+        .md-button {
+            .md-ripple-container {
+                width: 0px;
+                height: 0px;
+            }
+        }
+        .event-content {
+            .event-icon {
+                margin: 0px 28px 0px 4px;
+            }
+        }
+    }
+    .pip-ref-list-item,
+    .pip-ref-item {
+        .pip-pic.medium-icon {
+            margin-bottom: 15px;
+            margin-top: 16px;
+            width: 40px;
+            height: 40px;
+            font-size: 32px;
+            md-icon {
+                width: 40px;
+                height: 40px;
+            }
+        }
+        .pip-content {
+            max-width: calc(100% - 92px);
+            padding-bottom: 16px;
+            padding-top: 16px;
+            .pip-subtitle {
+                margin-bottom: 0px !important;
+            }
+        }
+    }
+    .iqs-ref-list-button {
+        .md-button {
+            padding-left: 21px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.iqs-operational-event-list {
+    .list-bottom-bufer {
+        display: none;
+    }
+}
+
+.iqs-add-operational-event {
+    .md-datepicker-input-container {
+        width: 100%;
+        .md-datepicker-input {
+            max-width: 100%;
+            width: 100%;
+            font: $font-subhead1;
+        }
+    }
+}

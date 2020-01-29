@@ -1,0 +1,54 @@
+.pip-sm {
+    .iqs-operational-event-add-dialog {
+        width: 250px;
+        max-width: 250px;
+    }
+}
+
+.iqs-operational-event-add-dialog {
+    width: 320px;
+    max-width: 320px; // min-height: 250px;
+    @include flex-direction(column);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    md-input-container .md-errors-spacer {
+        height: 0px !important;
+        min-height: 0px !important;
+    }
+    .iqs-content {
+        line-height: 24px;
+    }
+    .iqs-time {
+        width: 100px;
+    }
+    .pip-action-list {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        flex: 1;
+        align-items: left;
+        text-transform: none;
+        .md-button.pip-action-list-item {
+            margin: 0px;
+            min-height: 48px !important;
+            max-width: 100% !important;
+            width: 100%;
+            text-align: left;
+            .pip-title {
+                text-transform: none;
+                padding-left: 18px;
+                text-align: left;
+                line-height: 30px;
+                margin: 0px;
+            }
+        }
+    }
+}
