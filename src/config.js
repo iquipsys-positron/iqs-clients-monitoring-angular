@@ -9,6 +9,6 @@
     };
 
     angular
-        .module('iqsConfig', [])
+        .module('iqsShellRuntimeConfig', ['pipCommonRest', 'pipErrors', 'pipErrors.Unauthorized'])
         .constant('SHELL_RUNTIME_CONFIG', config);
 })();
